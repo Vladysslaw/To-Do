@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins";
+    background-image: linear-gradient(90deg, #e26f60, #f8c67b) ;
+}
+
+header, form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+header {
+    color: white;
+}
+
+.todo-input {
+    outline: none;
+    border: none;
+    background: white;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-family: "Poppins";
+}
+/* Размер кнопки */
+.todo-button {
+    outline: none;
+    border: none;
+    padding: 1rem;
+    height: 51px;
+    color: white;
+    background: #f8c67b;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.todo-button:hover {
+    color: #f8c67b;
+    background: white;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-div {
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    list-style: none;
+}
+
+.todo-list li {
+    flex: 1;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    height: 2.5rem;
+    min-width: 15rem;
+    background: white;
+    color: black;
+    padding: 0.5rem;
+}
+
+.complete-btn {
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 40px;
+    color: white;
+    background: rgb(153, 235, 72);
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.complete-btn:hover {
+    color: rgb(153, 235, 72);
+    background: white;
+}
+
+.trash-btn {
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 40px;
+    color: white;
+    background: lightcoral;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+.trash-btn:hover {
+    color: lightcoral;
+    background: white;
+    cursor: pointer;
+}
+
+.trash-btn i,
+.complete-btn i {
+    pointer-events: none;
+}
+
+.completed {
+    color: black;
+    opacity: 0.5;
+    color: black;
+    text-decoration: line-through;
+    transition: all 0.3s ease;
+}
+
+.fall {
+    transform: rotateY(15deg) rotateZ(15deg);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.select {
+    margin: 1.7rem;
+}
+
+select {
+    font-family: "Poppins";
+    outline: none;
+    border: none;
+    padding: 1rem;;
+}
